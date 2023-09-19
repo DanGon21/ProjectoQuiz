@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ExerPrueba</string>
+    <string name="title">Adivina el año de la pelicula</string>
+    <string name="estrenoCars">¿En que año se estreno Cars?</string>
+    <string name="estrenoKFP">¿En que año se estreno Kung Fu Panda?</string>
+    <string name="any_2007">2007</string>
+    <string name="any_2006">2006</string>
+    <string name="any_2008">2008</string>
+    <string name="any_2003">2003</string>
+    <string name="any_2009">2009</string>
+    <string name="any_2011">2011</string>
+</resources>

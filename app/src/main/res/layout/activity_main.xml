@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/article_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/title"
+        android:textColor="@color/blue"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/article_heading">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+            android:id="@+id/article_subheadingCars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/estrenoCars"
+            android:textAppearance=
+                "@android:style/TextAppearance.DeviceDefault" />
+
+            <ImageView
+                android:id="@+id/imageViewCars"
+                android:layout_width="410dp"
+                android:layout_height="114dp"
+                app:srcCompat="@drawable/car" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/btnCars1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/any_2007" />
+
+                <RadioButton
+                    android:id="@+id/btnCars2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/any_2006" />
+
+                <RadioButton
+                    android:id="@+id/btnCars3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/any_2008" />
+
+                <RadioButton
+                    android:id="@+id/btnCars4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/any_2003" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/Resposta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/article_subheadingKFP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/estrenoKFP"
+                android:textAppearance=
+                    "@android:style/TextAppearance.DeviceDefault" />
+
+            <ImageView
+                android:id="@+id/imageViewKFP"
+                android:layout_width="410dp"
+                android:layout_height="114dp"
+                app:srcCompat="@drawable/kfp" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/btnKFP1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/any_2008" />
+
+                <RadioButton
+                    android:id="@+id/btnKFP2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/any_2011" />
+
+                <RadioButton
+                    android:id="@+id/btnKFP3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/any_2007" />
+
+                <RadioButton
+                    android:id="@+id/btnKFP4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/any_2009" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>
