@@ -42,6 +42,7 @@
                 app:srcCompat="@drawable/car" />
 
             <RadioGroup
+                android:id="@+id/grupocars"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
@@ -54,28 +55,33 @@
 
                 <RadioButton
                     android:id="@+id/btnCars2"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
                     android:text="@string/any_2006" />
 
                 <RadioButton
                     android:id="@+id/btnCars3"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
                     android:text="@string/any_2008" />
 
                 <RadioButton
                     android:id="@+id/btnCars4"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
                     android:text="@string/any_2003" />
+
+                <TextView
+                    android:id="@+id/Resposta"
+                    android:layout_width="410dp"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:visibility="invisible"
+                    android:textStyle="bold"/>
             </RadioGroup>
-
-            <TextView
-                android:id="@+id/Resposta"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-
             <TextView
                 android:id="@+id/article_subheadingKFP"
                 android:layout_width="wrap_content"
@@ -98,31 +104,39 @@
                     android:id="@+id/btnKFP1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:onClick="onRadioButtonClicked2"
                     android:text="@string/any_2008" />
 
                 <RadioButton
                     android:id="@+id/btnKFP2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:onClick="onRadioButtonClicked2"
                     android:text="@string/any_2011" />
 
                 <RadioButton
                     android:id="@+id/btnKFP3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:onClick="onRadioButtonClicked2"
                     android:text="@string/any_2007" />
 
                 <RadioButton
                     android:id="@+id/btnKFP4"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:onClick="onRadioButtonClicked2"
                     android:text="@string/any_2009" />
-
+                <TextView
+                    android:id="@+id/Resposta2"
+                    android:layout_width="410dp"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:visibility="invisible"
+                    android:textStyle="bold"/>
             </RadioGroup>
 
         </LinearLayout>
     </ScrollView>
-
-
 
 </RelativeLayout>
